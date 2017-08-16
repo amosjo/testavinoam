@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Angular JS Views</title>
+    <script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+    <script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular-route.min.js"></script>
+    <script src = "mainApp.js"></script>
+    <script src = "repeat.js"></script>
+    <script src = "form.js"></script>
+</head>
+
+<body>
+<h2>Routing options</h2>
+<div ng-app = "mainApp">
+    <p><a href = "#form">Add Contacts</a></p>
+    <p><a href = "#repeat-init">View Contacts</a></p>
+    <div ng-view></div>
+
+    <script type = "text/ng-template" id = "addStudent.htm">
+        <h2> Add Contacts </h2>
+        {{message}}
+    </script>
+
+    <script type = "text/ng-template" id = "viewStudents.htm">
+        <h2> View Contacts </h2>
+        {{message}}
+    </script>
+
+
+</div>
+
+
+
+</body>
+</html>

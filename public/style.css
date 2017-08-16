@@ -1,0 +1,164 @@
+/* general settings */
+* {
+    font-family: Verdana, Arial;
+    font-size: 15px;
+    user-select: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none; /* no underline */
+}
+
+body, html{
+ padding: 0;
+ margin: 0;
+}
+
+body {
+  font-weight:100;
+  min-height:100%;
+  width:100%;
+}
+
+.contentHor {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.contentVer {
+  display: flex;
+  flex-direction: column;
+  /*flex-wrap: wrap;*/
+}
+
+.notWrap {
+  flex-wrap: nowrap;
+}
+
+.contentCenter {
+  justify-content: center;
+  align-items: center;
+}
+
+.contentArround {
+  justify-content: space-around;
+}
+.contentBerween {
+  justify-content: space-between;
+}
+
+.textProperty {
+  font-weight: bold;
+  padding: 5px;
+
+}
+
+.textValue {
+  font-weight: bold;
+  padding: 5px;
+}
+
+
+.contentDiv{
+  padding: 10px;
+}
+
+.anim-show-hide {
+  transition: all linear 0.5s;
+}
+.anim-show-hide.ng-hide {
+  opacity: 0;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+/*DIFFERENT RESOLUTIONS*/
+@media (max-width: 1200px) {
+    body {
+      font-size:90%;
+    }
+
+    h1 {
+      font-size:4.3em;
+    }
+
+    .mainHeader .logo {
+      margin-top:12px;
+      width:200px;
+    }
+}
+
+@media (max-width: 900px) {
+
+}
+
+@media (max-width: 768px) {
+    body {
+      font-size:80%;
+      margin:0;
+    }
+
+    h1 {
+      font-size:4em;
+    }
+
+    header {
+      height:70px;
+    }
+
+    .mainHeader .logo {
+      margin-top:20px;
+      width:70px;
+    }
+    .mainHeader .logo2  {
+      width:35px;
+      height: 35px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+      font-size:70%;
+      margin:0;
+    }
+
+    header {
+      height:50px;
+    }
+
+    .mainHeader .logo  {
+      display:none;
+    }
+
+    .mainHeader .logo2  {
+      display:none;
+    }
+}
+
+
+@media (max-height: 600px) {
+  body {
+    font-size:70%;
+    margin:0;
+  }
+
+  header {
+    height:50px;
+  }
+
+  .mainHeader .userInfoText {
+    display: none;
+  }
+
+  .mainHeader .logo  {
+    display:none;
+  }
+
+  .mainHeader .logo2  {
+    display:none;
+  }
+}
